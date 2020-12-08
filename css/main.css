@@ -52,6 +52,9 @@ img {
 .d-block {
     display: block!important;
 }
+.contenido-centrado {
+    max-width: 800px;
+}
 /* Botones */
 .boton {
  color: white;
@@ -141,11 +144,15 @@ img {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncios {
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 .contenido-anuncio {
     padding: 2rem;  
@@ -164,6 +171,8 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
 }
 .iconos-caracteristicas li {
     /*flex: 1;*/
@@ -292,7 +301,7 @@ img {
 }
 
 /** Interna**/
-
+/**Nosotros**/
 .cotenido-nosotros {
     display:grid;
     grid-template-columns: 50% 50%;
@@ -303,4 +312,11 @@ img {
   font-size: 2rem;
   margin: 0%;
   padding: 0 0 3rem 0;  
+}
+
+/**Anuncio**/
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
